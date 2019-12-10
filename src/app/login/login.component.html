@@ -1,0 +1,36 @@
+<div class="container">
+  <h5>{{erroMsg}}</h5>
+<div class="row">
+  <div class="col-md-6 login-container">
+    <h2 style="margin: auto">Login </h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+      <label>User Id:</label>
+      <input type="email" class="form-control" formControlName="userid" id="userid">
+      <div *ngIf="submitted && loginForm.controls.userid.errors" class="text-danger">
+        <div *ngIf="loginForm.controls.userid.errors.required">User is required</div>
+      </div>
+      </div>
+      <div class="form-group">
+      <label>Password:</label>
+        <input type="password" class="form-control" formControlName="password" id="pwd">
+        <div *ngIf="submitted && loginForm.controls.password.errors" class="text-danger">
+          <div *ngIf="loginForm.controls.password.errors.required">Password is required</div>
+        </div>
+      </div>
+        <!-- <div class="form-group">
+        <label>Confirm Password:</label>
+        <input type="password" class="form-control" formControlName="confirmpassword" id="confirmpassword">
+        <div *ngIf="submitted && loginForm.controls.confirmpassword.errors" class="text-danger">
+          <div class="alert alert-danger"
+          *ngIf="form.controls.confirmpassword.errors?.MutchPassword">Password not match</div>
+        </div> </div>  -->
+        <div class="form-group">
+      <button class="btn btn-primary">Login</button>
+      <div *ngIf="invalidLogin" class="text-danger">
+        <div>Invalid credentials.</div>
+      </div>
+       </div>
+    </form>
+  </div>
+</div></div>

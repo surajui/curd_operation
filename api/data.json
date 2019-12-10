@@ -1,0 +1,46 @@
+{
+  "user": [
+    {
+      "name": "suraj",
+      "email": "suraj@gmail.com",
+      "password": "suraj8790",
+      "gender": "Male",
+      "id": 2
+    },
+    {
+      "name": "Akaram",
+      "email": "akram@gmail.com",
+      "password": "123456",
+      "gender": "Male",
+      "id": 3
+    },
+    {
+      "name": "shirisha",
+      "email": "shirisha@gmail.com",
+      "password": "123654",
+      "gender": "Female",
+      "id": 4
+    },
+    {
+      "name": "Ravi",
+      "email": "ravi@gmail.com",
+      "password": "ravi123456",
+      "gender": "Male",
+      "id": 5
+    },
+    {
+      "name": "neelima",
+      "email": "neelima@gmail.com",
+      "password": "neelima",
+      "gender": "Female",
+      "id": 6
+    },
+    {
+      "name": "SDdsf",
+      "email": "sadfa@dsdsf",
+      "password": "dfsgsd",
+      "gender": "Female",
+      "id": 7
+    }
+  ]
+}
